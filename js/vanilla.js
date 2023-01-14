@@ -1,8 +1,10 @@
+//variable
 let start;
 var min = 0;
 var sec = 0;
-
 var timer = document.getElementById("timer");
+
+// start time
 function startTime() {
   start = setInterval(function () {
     sec++;
@@ -17,10 +19,12 @@ function startTime() {
   }, 1000);
 }
 
+//stop time
 function stopTime() {
   clearInterval(start);
 }
 
+// reset time
 function resetime() {
   clearInterval(start);
   min = 0;
